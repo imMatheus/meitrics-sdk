@@ -17,7 +17,7 @@ jobs:
             - name: Run install
               uses: borales/actions-yarn@v4
               with:
-                  cmd: install # will run `yarn install` command
+                  cmd: install --frozen-lockfile # will run `yarn install` command
 
             - name: Run lint
               uses: borales/actions-yarn@v4
