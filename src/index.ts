@@ -6,8 +6,6 @@ export interface Options {
 	secretKey: string;
 }
 
-console.log('hej');
-
 type LogFunction = (args: { url?: string; message?: string }) => void;
 
 export default function Meitrics(options: Options): Record<LogType, LogFunction> {
